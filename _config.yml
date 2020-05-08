@@ -105,7 +105,7 @@ theme: fluid
 
 deploy:
 - type: git
-  repo: https://ACCESS_TOKEN@github.com/vinceying/Blog.git
+  repo: git@github.com:vinceying/Blog.git # 使用仓库的ssh地址
   branch: master
 
 admin:
