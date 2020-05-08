@@ -1,1 +1,36 @@
+name: Blog-CI
 
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Download Source file
+      uses: actions/checkout@v2
+      with:
+        ref: master
+
+    - name: Prepare Node env
+      uses: actions/setup-node@v1
+      with:
+        node-version: "10.x"
+
+    - name: Set env
+      env: 
+        GITHUB_ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}  
+      run: |
+        git config --global user.name 'Vinceying'
+        git config --global user.email 'admin@vince.pub'
+        sed -i "s/ACCESS_TOKEN/$ACCESS_TOKEN/g" ./_config.yml
+
+    - name: Hexo Setup
+      run: |
+        npm i -g hexo-cli
+        npm i hexo-deployer-git --save
+
+    - name: Hexo Deploy
+      run: |
+        hexo clean && hexo g && hexo d
