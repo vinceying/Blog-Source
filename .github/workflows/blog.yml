@@ -24,14 +24,6 @@ jobs:
     - name: Install Dependencies
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm install
-    - name: Deploy static to Tencent CloudBase
-      id: deployStatic
-      uses: TencentCloudBase/cloudbase-action@v1.1.0
-      with:
-        secretId: ${{ secrets.SECRET_ID }}
-        secretKey: ${{ secrets.SECRET_KEY }}
-        envId: ${{ secrets.ENV_ID }}
-        staticSrcPath: public
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
