@@ -32,6 +32,14 @@ jobs:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         user_name: vinceying
         user_email: admin@vince.pub
+    - name: Deploy static to Tencent CloudBase
+        id: deployStatic
+        uses: TencentCloudBase/cloudbase-action@v1.1.0
+        with:
+          secretId: ${{ secrets.SECRET_ID }}
+          secretKey: ${{ secrets.SECRET_KEY }}
+          envId: ${{ secrets.ENV_ID }}
+          staticSrcPath: public
     # Use the output from the `deploy` step(use for test action)
     - name: Get the output
       run: |
