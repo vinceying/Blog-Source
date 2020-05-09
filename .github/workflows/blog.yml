@@ -31,9 +31,9 @@ jobs:
       uses: TencentCloudBase/cloudbase-action@v1.1.0
       with:
         secretId: ${{ secrets.SECRET_ID }}
-        ecretKey: ${{ secrets.SECRET_KEY }}
+        secretKey: ${{ secrets.SECRET_KEY }}
         envId: ${{ secrets.ENV_ID }}
-        staticSrcPath: ./public
+        staticSrcPath: public
 
     # Deploy hexo blog website.
     - name: Deploy
