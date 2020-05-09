@@ -37,7 +37,6 @@ jobs:
 
     # Deploy static to Tencent CloudBase.    
     - name: Deploy static to Tencent CloudBase
-       id: deploy
        uses: TencentCloudBase/cloudbase-action@v1.1.0
        with:
          secretId: ${{ secrets.SECRET_ID }}
