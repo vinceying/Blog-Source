@@ -3,6 +3,11 @@ title: 随笔，随便写写和记录一些内容
 date: 2020-04-05 01:25:08
 banner_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/photo/note.png
 ---
+
+<p class="note note-success">随便说说</p>
+
+由于临近开学和作业繁重，更新较为缓慢，近期打算整一次大更新。
+
 <p class="note note-primary">常用链接导航</p>
 
 **[阿里邮箱](https://qiye.aliyun.com/ ) | [图床](https://imgchr.com/ ) | [Awesome Wallpapers](https://wallhaven.cc ) | [iconfont](https://www.iconfont.cn ) | [ecnova](https://trench.ecnova.com/ ) | [File](https://cdn.jsdelivr.net/gh/vinceying/blog-file@eb13514517dbd62db37641637ce6db7c52bad1e5/ ) | [Wallpaper Hub](https://wallpaperhub.app/ )**
@@ -25,10 +30,12 @@ banner_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/photo/note.pn
 * 加密插件（2020/4/10）
 * 统计服务及内容管理页面（2020/4/10）
 * valine 邮箱提醒（2020/4/10）
+* GitHub Actions 部署（2020/5/9)
 
 **待完善项目**
 
 * 完善 note 页面
+* 更新 footer
 * ~~valine 邮箱提醒~~
 * ~~网站主体备份~~
 * ~~留言页面~~

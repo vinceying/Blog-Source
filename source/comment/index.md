@@ -10,7 +10,7 @@ banner_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/photo/home.jp
   </div>
   <p class="note note-primary">欢迎给我留言</p>
 
-  欢迎来到本站，欢迎交换友链，同时也欢迎对本站提出建议和交流经验。也可以通过邮箱 **[admin@vince.pub](mailto:admin@vince.pub)** 联系我，收到后我会及时回复。
+  欢迎来到本站，欢迎交换友链，同时也欢迎对本站提出建议和交流经验。也可以通过邮箱 **[admin[AT]vince.pub](mailto:admin@vince.pub)** 联系我，收到后我会及时回复。
 
   <p class="note note-success">以下为我的个人信息</p>
 

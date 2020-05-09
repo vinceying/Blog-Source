@@ -35,4 +35,4 @@ date: 2020-04-04 21:45:58
 *  **[hexo-tag-dplayer](https://github.com/MoePlayer/hexo-tag-dplayer)**
 
 ## 最后更新
-最后更新于2020/4/16，更新内容为 valine 邮箱提醒。
+最后更新于2020/5/9，更新内容为 GitHub Actions 部署。
