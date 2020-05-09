@@ -31,13 +31,13 @@ jobs:
       uses: sma11black/hexo-action@v1.0.0
       with:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
-        user_name: your github username
-        user_email: your github useremail
+        user_name: vinceying
+        user_email: admin@vince.pub
     # Use the output from the `deploy` step(use for test action)
     - name: Get the output
       run: |
         echo "${{ steps.deploy.outputs.notify }}"
-   - name: Deploy static to Tencent CloudBase
+       - name: Deploy static to Tencent CloudBase
         id: deployStatic
         uses: TencentCloudBase/cloudbase-action@v1.1.0
         with:
