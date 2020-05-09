@@ -8,11 +8,18 @@ jobs:
     - name: Clean
       uses: heowc/action-hexo@master
       with:
-        args: Clean
+        args: clean
     - name: Generate
       uses: heowc/action-hexo@master
       with:
-        args: Generate
+        args: generate
+    - name: Deploy
+      uses: heowc/action-hexo@master
+      env:
+        EMAIL: admin@vince.pub
+        NAME: vinceying
+      with:
+        args: deploy
    - name: Deploy static to Tencent CloudBase
         id: deployStatic
         uses: TencentCloudBase/cloudbase-action@v1.1.0
