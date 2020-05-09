@@ -34,3 +34,13 @@ jobs:
         deploy_key: ${{ secrets.DEPLOY_KEY }}
         user_name: vinceying
         user_email: admin@vince.pub
+
+    # Deploy static to Tencent CloudBase.    
+    - name: Deploy static to Tencent CloudBase
+       id: deployStatic
+       uses: TencentCloudBase/cloudbase-action@v1.1.0
+       with:
+         secretId: ${{ secrets.SECRET_ID }}
+         secretKey: ${{ secrets.SECRET_KEY }}
+         envId: ${{ secrets.ENV_ID }}
+         staticSrcPath: ./public/
