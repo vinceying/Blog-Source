@@ -10,7 +10,7 @@ banner_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/photo/note.pn
 
 <p class="note note-primary">常用链接导航</p>
 
-**[阿里邮箱](https://qiye.aliyun.com/ ) | [图床](https://imgchr.com/ ) | [Awesome Wallpapers](https://wallhaven.cc ) | [iconfont](https://www.iconfont.cn ) | [ecnova](https://trench.ecnova.com/ ) | [File](https://cdn.jsdelivr.net/gh/vinceying/blog-file@eb13514517dbd62db37641637ce6db7c52bad1e5/ ) | [Wallpaper Hub](https://wallpaperhub.app/ )**
+**[阿里邮箱](https://qiye.aliyun.com/ ) | [图床](https://imgchr.com/ ) | [Awesome Wallpapers](https://wallhaven.cc ) | [iconfont](https://www.iconfont.cn ) | [ecnova](https://trench.ecnova.com/ ) | [Repo File](https://cdn.jsdelivr.net/gh/vinceying/blog-file@eb13514517dbd62db37641637ce6db7c52bad1e5/ ) | [Wallpaper Hub](https://wallpaperhub.app/ )**
 
 <p class="note note-info">更新日志及开发</p>
 
@@ -31,11 +31,13 @@ banner_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/photo/note.pn
 * 统计服务及内容管理页面（2020/4/10）
 * valine 邮箱提醒（2020/4/10）
 * GitHub Actions 部署（2020/5/9)
+* 更新 footer (2020/5/10)
+* 移动一言与运行时间到关于页面(2020/5/10)
 
 **待完善项目**
 
 * 完善 note 页面
-* 更新 footer
+* ~~更新 footer~~
 * ~~valine 邮箱提醒~~
 * ~~网站主体备份~~
 * ~~留言页面~~
@@ -46,7 +48,6 @@ banner_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/photo/note.pn
 * Github 和 Conding 双部署（排期中）
 * ~~更换 valine 评论系统~~
 * 友链页面完善
-* ~~自定义 footer~~
 * 更换 Markdown 渲染器
 * ~~Github 图床更新及网站及引用更新~~
 * ~~插入视频插件~~

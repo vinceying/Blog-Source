@@ -99,7 +99,7 @@ wrong_hash_message: 抱歉, 这个页面不能被校验
     </div>
 
 <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="http://47.100.41.120/" class="card-body hover-with-bg" target="_blank" rel="noopener">
+      <a href="https:/file.vince.pub/" class="card-body hover-with-bg" target="_blank" rel="noopener">
         <div class="card-content">          
   <div class="link-text">
             <div class="link-title">个人文件服务</div>

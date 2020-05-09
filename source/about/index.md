@@ -21,6 +21,7 @@ date: 2020-04-04 21:45:58
 网站内容使用 CC BY-SA 3.0 协议，除特别标注外，均可注明出处转载。Fluid 使用 MIT 协议，我会遵守相关协议。网站图片部分来源于网络，如有侵权，非常抱歉，请通过上方电子邮件按钮联系我，收到后我将尽快删除。
 
 ## 程序和插件
+
 以下为本站所使用程序及插件
 
 *  **[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)** 
@@ -34,5 +35,50 @@ date: 2020-04-04 21:45:58
 *  **[hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)**
 *  **[hexo-tag-dplayer](https://github.com/MoePlayer/hexo-tag-dplayer)**
 
-## 最后更新
-最后更新于2020/5/9，更新内容为 GitHub Actions 部署。
+## 一言，用代码表达语言的魅力
+
+<p id="hitokoto">:D 获取中...</p>
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {
+      const hitokoto = document.getElementById('hitokoto')
+      hitokoto.innerText = data.hitokoto
+      })
+      .catch(console.error)
+</script>
+
+## 最后更新与运行时间
+最后更新于2020/5/9，更新内容为 footer。
+
+<div>
+  <span id="timeDate">载入天数...</span>
+  <span id="times">载入时分秒...</span>
+  <script>
+  var now = new Date();
+  function createtime(){
+      var grt= new Date("04/05/2020 00:00:00");
+      now.setTime(now.getTime()+250);
+      days = (now - grt ) / 1000 / 60 / 60 / 24;
+      dnum = Math.floor(days);
+      hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+      hnum = Math.floor(hours);
+      if(String(hnum).length ==1 ){
+          hnum = "0" + hnum;
+      }
+      minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+      mnum = Math.floor(minutes);
+      if(String(mnum).length ==1 ){
+                mnum = "0" + mnum;
+      }
+      seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+      snum = Math.round(seconds);
+      if(String(snum).length ==1 ){
+                snum = "0" + snum;
+      }
+      document.getElementById("timeDate").innerHTML = "本站运行&nbsp"+dnum+"&nbsp天";
+      document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
+  }
+  setInterval("createtime()",250);
+  </script>
+</div>
