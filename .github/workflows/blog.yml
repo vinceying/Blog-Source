@@ -6,7 +6,7 @@ on:
 jobs:
   build: # job1 id
     runs-on: ubuntu-latest # 运行环境为最新版 Ubuntu
-    name: A job to deploy blog.
+    name: deploy blog
     steps:
     - name: Checkout # step1 获取源码
       uses: actions/checkout@v1 # 使用 actions/checkout@v1
@@ -36,16 +36,35 @@ jobs:
         user_email: admin@vince.pub
   
   deploy:
-    runs-on: ubuntu-latest
-    name: Tencent Cloudbase Github Action
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Deploy static to Tencent CloudBase
-        id: deployStatic
-        uses: TencentCloudBase/cloudbase-action@v1.1.0
-        with:
-          secretId: ${{ secrets.SECRET_ID }}
-          secretKey: ${{ secrets.SECRET_KEY }}
-          envId: ${{ secrets.ENV_ID }}
-          staticSrcPath: ./public/
+      build:
+       runs-on: ubuntu-latest
+
+       steps:
+       - name: Download Branch
+         uses: actions/checkout@v2
+
+       - name: Update Submodule
+         run: |
+           git submodule init
+           git submodule update --remote
+
+       - name: Prepare Node Env
+         uses: actions/setup-node@v1
+         with:
+           node-version: "10.x"
+
+       - name: Hexo Generate
+         run: |
+           rm -f .yarnclean
+           yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+           rm -rf ./public
+           yarn run hexo clean
+           yarn run hexo generate
+
+       - name: Deploy static to Tencent CloudBase
+         uses: TencentCloudBase/cloudbase-action@v1.1.0
+         with:
+           secretId: ${{ secrets.SECRET_ID }}
+           secretKey: ${{ secrets.SECRET_KEY }}
+           envId: ${{ secrets.ENV_ID }}
+           staticSrcPath: ./public/
