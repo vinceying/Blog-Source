@@ -1,19 +1,34 @@
-on: push
 name: Deploy
+
+on: [push]
+
 jobs:
   build:
-    name: Build
+
     runs-on: ubuntu-latest
+
     steps:
-    - name: Clean
-      uses: heowc/action-hexo@master
+    - name: Download Branch
+      uses: actions/checkout@v2
+
+    - name: Update Submodule
+      run: |
+        git submodule init
+        git submodule update --remote
+    - name: Prepare Node Env
+      uses: actions/setup-node@v1
       with:
-        args: clean
-    - name: Generate
-      uses: heowc/action-hexo@master
-      with:
-        args: generate
-   - name: Deploy static to Tencent CloudBase
+        node-version: "10.x"
+
+    - name: Hexo Generate
+      run: |
+        rm -f .yarnclean
+        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
+    
+    - name: Deploy static to Tencent CloudBase
         id: deployStatic
         uses: TencentCloudBase/cloudbase-action@v1.1.0
         with:
@@ -21,3 +36,4 @@ jobs:
           secretKey: ${{ secrets.SECRET_KEY }}
           envId: ${{ secrets.ENV_ID }}
           staticSrcPath: public
+    
