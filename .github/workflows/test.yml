@@ -1,0 +1,26 @@
+on: push
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node 
+        uses: actions/setup-node@v1
+        with:
+          node-version: '10.x'
+      - name: NPM
+        run: npm install
+      - name: Clean
+        run: ./node_modules/.bin/hexo clean
+      - name: Generate
+        run: ./node_modules/.bin/hexo generate
+      - name: Deploy static to Tencent CloudBase
+        id: deployStatic
+        uses: TencentCloudBase/cloudbase-action@v1.1.0
+        with:
+          secretId: ${{ secrets.SECRET_ID }}
+          secretKey: ${{ secrets.SECRET_KEY }}
+          envId: ${{ secrets.ENV_ID }}
+          staticSrcPath: public
