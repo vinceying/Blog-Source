@@ -1,11 +1,11 @@
-name: Deploy
+name: Deploy to Repo
 
 on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Deploy blog Github Repo
+    name: Deploy blog to Github Repo
     steps:
     - name: Checkout
       uses: actions/checkout@v1
