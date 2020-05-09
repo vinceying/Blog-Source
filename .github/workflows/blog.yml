@@ -33,7 +33,7 @@ jobs:
         secretId: ${{ secrets.SECRET_ID }}
         ecretKey: ${{ secrets.SECRET_KEY }}
         envId: ${{ secrets.ENV_ID }}
-        staticSrcPath: public
+        staticSrcPath: ./public
 
     # Deploy hexo blog website.
     - name: Deploy
