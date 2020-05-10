@@ -7,8 +7,8 @@ tags:
  - 分享
 categories:
  - Diary
-index_img: https://i.vince.pub/blog-file/photo/7e7c684e.jpg
-banner_img: https://i.vince.pub/blog-file/photo/7e7c684e.jpg
+index_img: https://cdn.vince.pub/blog-file/photo/7e7c684e.jpg
+banner_img: https://cdn.vince.pub/blog-file/photo/7e7c684e.jpg
 excerpt: 本篇记录在 Fluid 文档中自己 PR 的内容原稿，持续更新中。
 ---
 

@@ -7,8 +7,8 @@ tags:
  - 教程
 categories:
   - Diary
-index_img: https://i.vince.pub/blog-file/photo/post_icon.jpg
-banner_img: https://i.vince.pub/blog-file/photo/post_icon.jpg
+index_img: https://cdn.vince.pub/blog-file/photo/post_icon.jpg
+banner_img: https://cdn.vince.pub/blog-file/photo/post_icon.jpg
 excerpt: Fluid 在2020/4/5之前的版本使用的图标库是 FontAwesome，在之后的版本使用 Iconfont。另外内容已经 PR 到文档中。
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 随笔，随便写写和记录一些内容
 date: 2020-04-05 01:25:08
-banner_img: https://i.vince.pub/blog-file/photo/note.png
+banner_img: https://cdn.vince.pub/blog-file/photo/note.png
 ---
 
 <p class="note note-success">随便说说</p>

@@ -1,10 +1,10 @@
 ---
 title: 给我留言
 date: 2020-04-07 17:12:43
-banner_img: https://i.vince.pub/blog-file/photo/home.jpg
+banner_img: https://cdn.vince.pub/blog-file/photo/home.jpg
 ---
   <div class="about-avatar">
-    <img src="https://i.vince.pub/blog-file/photo/vince_logo.jpg" srcset="/img/loading.gif"
+    <img src="https://cdn.vince.pub/blog-file/photo/vince_logo.jpg" srcset="/img/loading.gif"
      class="img-fluid z-depth-1"
      alt="avatar">
   </div>
