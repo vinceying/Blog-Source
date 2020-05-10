@@ -33,6 +33,7 @@ banner_img: https://i.vince.pub/photo/note.png
 * GitHub Actions 部署（2020/5/9)
 * 更新 footer (2020/5/10)
 * 移动一言与运行时间到关于页面(2020/5/10)
+* 更换 CDN (2020/5/11)
 
 **待完善项目**
 
