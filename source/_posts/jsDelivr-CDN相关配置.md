@@ -1,8 +1,8 @@
 ---
 title: jsDelivr-CDN 相关配置
 author: Vince
-banner_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file/photo/2667741f1.jpg
-index_img: https://cdn.jsdelivr.net/gh/vinceying/blog-file/photo/2667741f1.jpg
+banner_img: https://i.vince.pub/photo/2667741f1.jpg
+index_img: https://i.vince.pub/photo/2667741f1.jpg
 abbrlink: 2667741f
 date: 2020-04-06 20:54:14
 tags:
