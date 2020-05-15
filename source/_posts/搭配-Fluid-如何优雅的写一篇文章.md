@@ -39,7 +39,8 @@ Hexo-theme-fluid|https://github.com/fluid-dev/hexo-theme-fluid|Fliud Github Repo
 Fluid Blog|https://hexo.fluid-dev.com/|Fliud 官方博客
 ```
 
-#### 脚注
+#### 脚注(仅默认渲染器可用)
+
 脚注演示[^footnote]
  [^footnote]: 脚注内容演示
 
@@ -112,6 +113,19 @@ Fluid Blog|https://hexo.fluid-dev.com/|Fliud 官方博客
 </p>
 
 ```
+
+#### iframe 页面镶套
+
+iframe 页面镶套可以帮助我们更好的展示一个页面。比如以下演示页面。
+
+<iframe src="https://i.vince.pub/" width="100%" height="650" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>
+
+
+```
+<iframe src="https://i.vince.pub/" width="100%" height="500" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>
+```
+
+一些参数说明，`width="100%"` 为宽度自适应，高度请根据实际需求跳转，**注意移动端页面是否匹配。** `scrolling` 为滚动条参数。`frameborder` 为边框参数。`noresize` 属性规定用户无法调整框架的大小。
 
 ### 善用 Tag 组件
 
