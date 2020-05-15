@@ -205,7 +205,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
   prev_next:  # 文章底部上一篇下一篇功能
     enable: true
   reward: 
-    enable: flase
+    enable: false
     content: test
     alipay_code: https://cdn.vince.pub/blog-file/photo/IMG_3433(20200515-152122).JPG
     wechat_code: https://cdn.vince.pub/blog-file/photo/IMG_3433(20200515-152122).JPG
