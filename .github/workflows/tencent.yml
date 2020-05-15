@@ -1,6 +1,6 @@
 name: Deploy to Tencent CloudBase
 
-on: [push, repository_dispatch]
+on: push
 
 jobs:
   build:
