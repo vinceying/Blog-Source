@@ -27,16 +27,16 @@ Fluid 是一款很十分优雅的主题，那么写一篇优雅的文章搭配�
 
 站点|地址|介绍
 --|:--:|--:
-Fliud Docs|https://hexo.fluid-dev.com/docs/|Fliud 官方文档
-Hexo-theme-fluid|https://github.com/fluid-dev/hexo-theme-fluid|Fliud Github Repo
-Fluid Blog|https://hexo.fluid-dev.com/|Fliud 官方博客
+FluidDocs|https://hexo.fluid-dev.com/docs/|Fluid官方文档
+Hexo-theme-fluid|https://github.com/fluid-dev/hexo-theme-fluid|FluidGithub Repo
+Fluid Blog|https://hexo.fluid-dev.com/|Fluid官方博客
 
 ```
 站点|地址|介绍
 --|:--:|--:
-Fliud Docs|https://hexo.fluid-dev.com/docs/|Fliud 官方文档
-Hexo-theme-fluid|https://github.com/fluid-dev/hexo-theme-fluid|Fliud Github Repo
-Fluid Blog|https://hexo.fluid-dev.com/|Fliud 官方博客
+FluidDocs|https://hexo.fluid-dev.com/docs/|Fluid官方文档
+Hexo-theme-fluid|https://github.com/fluid-dev/hexo-theme-fluid|FluidGithub Repo
+Fluid Blog|https://hexo.fluid-dev.com/|Fluid官方博客
 ```
 
 #### 脚注(仅默认渲染器可用)
@@ -102,14 +102,14 @@ Fluid Blog|https://hexo.fluid-dev.com/|Fliud 官方博客
 <p style="text-align:center;color:#8EC0E4;font-size:1.5em;font-weight: bold;">
 综合演示
 <br>
-优雅使用 Fliud 写文章
+优雅使用 Fluid写文章
 </p>
 
 ```
 <p style="text-align:center;color:#8EC0E4;font-size:1.5em;font-weight: bold;">
 综合演示
 <br>
-优雅使用 Fliud 写文章
+优雅使用 Fluid写文章
 </p>
 
 ```
@@ -129,7 +129,7 @@ iframe 页面镶套可以帮助我们更好的展示一个页面。比如以下�
 
 ### 善用 Tag 组件
 
-Fluid 内置了许多 Tag 组件，包含便签、行内标签、勾选框、按钮和组图，可以使用这些组件来丰富文章内容，具体点击查看官方文档查看，**[点击跳转到 Fliud Doc](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)**。
+Fluid 内置了许多 Tag 组件，包含便签、行内标签、勾选框、按钮和组图，可以使用这些组件来丰富文章内容，具体点击查看官方文档查看，**[点击跳转到 FluidDoc](https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6)**。
 
 ## 配图
 
