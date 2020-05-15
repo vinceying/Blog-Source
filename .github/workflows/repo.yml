@@ -1,10 +1,12 @@
 name: Deploy to Repo
 
-on: [push]
+on: [push, repository_dispatch]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     name: Deploy blog to Github Repo
     steps:
     - name: Checkout
@@ -24,6 +26,14 @@ jobs:
     - name: Install Dependencies
       if: steps.cache.outputs.cache-hit != 'true'
       run: npm install
+          - name: Setup Hexo Dependencies and Generate Public Files
+        env:
+        YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+        run: |
+         npm install hexo-cli -g
+         npm install yuque-hexo -g
+         npm install
+         npm run start
     # Deploy hexo blog website.
     - name: Deploy
       id: deploy
