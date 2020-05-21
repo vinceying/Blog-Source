@@ -18,24 +18,6 @@ date: 2020-04-04 21:45:58
 
 还在路上，希望能够一直热爱一些我所热爱的东西，也希望可以更加自律。同时也在培养自己的版权意识。之前也说了，主要是记录一下自己的文章和一些内容，佛系青年的佛系网站，**没有追求什么访客量**，当然也不会有什么访客量，主要为了给自己留点回忆。
 
-## 版权
-网站内容使用 CC BY-SA 3.0 协议，除特别标注外，均可注明出处转载。Fluid 使用 MIT 协议，我会遵守相关协议。网站图片部分来源于网络，如有侵权，非常抱歉，请通过上方电子邮件按钮联系我，收到后我将尽快删除。
-
-## 程序和插件
-
-以下为本站所使用程序及插件
-
-*  **[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)** 
-*  **[JSDelivr](https://www.jsdelivr.com)** 
-*  **[Hitokoto](https://hitokoto.cn/)** 
-*  **[valine](https://valine.js.org/)** 
-*  **[hexo](https://hexo.io/)** 
-*  **[hexo-admin](https://github.com/jaredly/hexo-admin)** 
-*  **[hexo-abbrlink](https://github.com/rozbo/hexo-abbrlink)**
-*  **[hexo-blog-encrypt](https://github.com/MikeCoder/hexo-blog-encrypt)**
-*  **[hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)**
-*  **[hexo-tag-dplayer](https://github.com/MoePlayer/hexo-tag-dplayer)**
-
 ## 一言，用代码表达语言的魅力
 
 <p id="hitokoto">:D 获取中...</p>
@@ -83,3 +65,5 @@ date: 2020-04-04 21:45:58
   setInterval("createtime()",250);
   </script>
 </div>
+
+## 相关内容及信息
