@@ -12,44 +12,77 @@ banner_img: https://cdn.vince.pub/blog-file/photo/note.png
 
 **[阿里邮箱](https://qiye.aliyun.com/ ) | [图床](https://imgchr.com/ ) | [Awesome Wallpapers](https://wallhaven.cc ) | [iconfont](https://www.iconfont.cn ) | [ecnova](https://trench.ecnova.com/ ) | [Repo File](https://cdn.jsdelivr.net/gh/vinceying/blog-file@eb13514517dbd62db37641637ce6db7c52bad1e5/ ) | [Wallpaper Hub](https://wallpaperhub.app/ )**
 
-<p class="note note-info">更新日志及开发</p>
+<p class="note note-info">更新计划</p>
 
-**更新日志**
+<div id="html-partial">
+ <link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/circlechart.css">
+    <div id="percent">
+        <div class="circlechart" data-percentage="-50">Study</div>
+        <div class="circlechart" data-percentage="60">Blog</div>
+        <div class="circlechart" data-percentage="30">Website</div>
+    </div>
+    <script>
+        window.jQuery || document.write('<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"><\/script>')
+    </script>
+    <script src="https://cdn.vince.pub/blog-file/js/circlechart.js"></script>
+    <script>
+        $('.circlechart').circlechart(); // Initialization
+    </script>
+</div>
 
-* 网站整体建设开发（2020/4/4）
-* 网站插件部署（2020/4/5）
-* 网站关于页面完善（2020/4/5）
-* 一些错误更正（2020/4/6）
-* jsdelivr 使用参考 （2020/4/6）
-* 友链页面 （2020/4/7）
-* 视频播放插件 （2020/4/7）
-* 关闭分类页，打开归档页面（2020/4/7）
-* 更换评论系统为 valine ，创建留言页面（2020/4/7）
-* 顶部任务栏图标（2020/4/8）
-* 中英文规范与博客版本更新（2020/4/10）
-* 加密插件（2020/4/10）
-* 统计服务及内容管理页面（2020/4/10）
-* valine 邮箱提醒（2020/4/10）
-* GitHub Actions 部署（2020/5/9)
-* 更新 footer (2020/5/10)
-* 移动一言与运行时间到关于页面(2020/5/10)
-* 更换 CDN (2020/5/11)
+**🚀 待完善项目**
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-1" />
+    <label for="teal2">重新整合 note 页面</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-2" />
+    <label for="teal2">多节点部署</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-3" />
+    <label for="teal2">valine 评论唤醒</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-4" />
+    <label for="teal2">友链页面完善</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-5" />
+    <label for="teal2">更换 Markdown 渲染器</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-6" />
+    <label for="teal2">菜单整合及网站重新布局</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-7" />
+    <label for="teal2">留言页面</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-8" />
+    <label for="teal2">相关内容管理页面</label>
+</div>
+<br>
 
-**待完善项目**
-
-* 完善 note 页面
-* ~~更新 footer~~
-* ~~valine 邮箱提醒~~
-* ~~网站主体备份~~
-* ~~留言页面~~
-* ~~网站统计~~
-* ~~相关内容管理页面~~
-* ~~相关旧文章更新~~
-* ~~jsdelivr CDN（Github) 部署~~
-* Github 和 Conding 双部署（排期中）
-* ~~更换 valine 评论系统~~
-* 友链页面完善
-* 更换 Markdown 渲染器
-* ~~Github 图床更新及网站及引用更新~~
-* ~~插入视频插件~~
-* 更多插件及二次开发
+**🍉 已完善项目**
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-1" />
+    <label for="teal">更新 footer</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-2" />
+    <label for="tea1">网站统计</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-3" />
+    <label for="tea1">jsdelivr CDN（Github) 部署</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-4" />
+    <label for="tea1">基础插件服务</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-5" />
+    <label for="tea1">主站迁移至 Tencent Cloud Base</label>
+</div>
