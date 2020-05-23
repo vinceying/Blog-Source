@@ -40,10 +40,6 @@ banner_img: https://cdn.vince.pub/blog-file/photo/note.png
     <label for="teal2">多节点部署</label>
 </div>
 <div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-3" />
-    <label for="teal2">valine 评论唤醒</label>
-</div>
-<div class="icheck-material-teal">
     <input type="radio" checked id="teal2" name="do-4" />
     <label for="teal2">友链页面完善</label>
 </div>
@@ -85,4 +81,8 @@ banner_img: https://cdn.vince.pub/blog-file/photo/note.png
 <div class="icheck-material-teal">
     <input type="checkbox" checked id="td-5" />
     <label for="tea1">主站迁移至 Tencent Cloud Base</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-5" />
+    <label for="tea1">valine 评论唤醒</label>
 </div>
