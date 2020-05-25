@@ -40,7 +40,7 @@ jobs:
         mkdir -p ~/.ssh/
         echo "$SSH_PRIVATE" | tr -d '\r' > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan coding.net >> ~/.ssh/known_hosts
+        ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
         git config --global user.name "$GIT_NAME"
         git config --global user.email "$GIT_EMAIL"
         yarn run hexo deploy
