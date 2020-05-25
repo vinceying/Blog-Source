@@ -18,7 +18,7 @@ banner_img: https://cdn.vince.pub/blog-file/photo/note.png
  <link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/circlechart.css">
     <div id="percent">
         <div class="circlechart" data-percentage="-50">Study</div>
-        <div class="circlechart" data-percentage="60">Blog</div>
+        <div class="circlechart" data-percentage="65">Blog</div>
         <div class="circlechart" data-percentage="30">Website</div>
     </div>
     <script>
@@ -34,10 +34,6 @@ banner_img: https://cdn.vince.pub/blog-file/photo/note.png
 <div class="icheck-material-teal">
     <input type="radio" checked id="teal2" name="do-1" />
     <label for="teal2">重新整合 note 页面</label>
-</div>
-<div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-2" />
-    <label for="teal2">多节点部署</label>
 </div>
 <div class="icheck-material-teal">
     <input type="radio" checked id="teal2" name="do-4" />
@@ -85,4 +81,8 @@ banner_img: https://cdn.vince.pub/blog-file/photo/note.png
 <div class="icheck-material-teal">
     <input type="checkbox" checked id="td-5" />
     <label for="tea1">valine 评论唤醒</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-6" />
+    <label for="tea1">多节点部署</label>
 </div>
