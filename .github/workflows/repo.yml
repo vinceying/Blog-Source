@@ -1,4 +1,4 @@
-name: Deploy to repo(node)
+name: Deploy to Repo(Github, Coding, Gitee)
 
 on: [push]
 
@@ -42,6 +42,7 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
         ssh-keyscan github.com >> ~/.ssh/known_hosts
+        ssh-keyscan gitee.com >> ~/.ssh/known_hosts
         git config --global user.name "$GIT_NAME"
         git config --global user.email "$GIT_EMAIL"
         yarn run hexo deploy

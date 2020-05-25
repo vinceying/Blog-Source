@@ -107,6 +107,7 @@ deploy:
   repo: 
     coding: git@e.coding.net:vinceying/vince-blog.git
     github: git@github.com:vinceying/vinceying.github.io.git
+    gitee: git@gitee.com:vinceying/vince-blog.git
   branch: master
 
 admin:
