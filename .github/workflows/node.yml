@@ -3,6 +3,9 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    name: Deploy blog to node
     steps:
     - name: Checkout              
       uses: actions/checkout@v2
