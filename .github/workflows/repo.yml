@@ -1,40 +1,47 @@
-name: Deploy to Repo
+name: Deploy to repo(node)
 
 on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      TZ: Asia/Shanghai
-    name: Deploy blog to Github Repo
+    env: 
+      hTZ: Asia/Shanghai
     steps:
     - name: Checkout
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
       with:
-        submodules: true # Checkout private submodules(themes or something else).
-    
-    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
-    - name: Cache node modules
-      uses: actions/cache@v1
-      id: cache
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-    - name: Install Dependencies
-      if: steps.cache.outputs.cache-hit != 'true'
-      run: npm install
-    # Deploy hexo blog website.
-    - name: Deploy
-      id: deploy
-      uses: sma11black/hexo-action@v1.0.0
-      with:
-        deploy_key: ${{ secrets.DEPLOY_KEY }}
-        user_name: vinceying
-        user_email: admin@vince.pub
-    # Use the output from the `deploy` step(use for test action)
-    - name: Get the output
+        ref: master
+
+    - name: Update Submodule
       run: |
-        echo "${{ steps.deploy.outputs.notify }}"
+        git submodule init
+        git submodule update --remote
+
+    - name: Setup Node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "10.x"
+
+    - name: Hexo Generate
+      run: |
+        rm -f .yarnclean
+        yarn --frozen-lockfile --ignore-engines --ignore-optional --non-interactive --silent --ignore-scripts --production=false
+        rm -rf ./public
+        yarn run hexo clean
+        yarn run hexo generate
+
+    - name: Hexo Deploy
+      env:
+        SSH_PRIVATE: ${{ secrets.SSH_PRIVATE }}
+        GIT_NAME: vinceying
+        GIT_EMAIL: admin@vicne.pub
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$SSH_PRIVATE" | tr -d '\r' > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan e.coding.net >> ~/.ssh/known_hosts
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.name "$GIT_NAME"
+        git config --global user.email "$GIT_EMAIL"
+        yarn run hexo deploy

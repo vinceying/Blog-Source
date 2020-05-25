@@ -104,7 +104,9 @@ theme: fluid
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@e.coding.net:vinceying/vince-blog.git
+  repo: 
+    coding: git@e.coding.net:vinceying/vince-blog.git
+    github: git@github.com:vinceying/vinceying.github.io.git
   branch: master
 
 admin:
