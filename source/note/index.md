@@ -55,6 +55,10 @@ banner_img: https://cdn.vince.pub/blog-file/photo/note.png
     <input type="radio" checked id="teal2" name="do-8" />
     <label for="teal2">相关内容管理页面</label>
 </div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-9" />
+    <label for="teal2">主站内容更新</label>
+</div>
 <br>
 
 **🍉 已完善项目**

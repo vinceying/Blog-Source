@@ -61,7 +61,7 @@ custom_js:
   - https://cdn.vince.pub/blog-file/js/horizontalmenu.js
 custom_css:
   - /css/demo.css
-  - https://at.alicdn.com/t/font_1744971_q7stj2ocsoe.css
+  - https://at.alicdn.com/t/font_1744971_kgatoperq7.css
   - https://cdn.vince.pub/blog-file/css/jquery.horizontalmenu.css
   - https://cdn.vince.pub/blog-file/css/normalize.css
   - https://cdn.vince.pub/blog-file/css/icheck-material.css
@@ -122,6 +122,10 @@ navbar:
         icon: 'iconfont icon-gongneng',
         link: '#',
         submenu: [
+          { key: '主站', link: 'https://www.vince.pub', icon: 'iconfont icon-icon_wangye' },
+          { key: '私有云', link: 'https://Cloud.vince.pub', icon: 'iconfont icon-wenjianjia' },
+          { key: '壁纸', link: 'https://i.vince.pub/website/wallpapers/', icon: 'iconfont icon-xiangce' },
+          { key: '文件', link: 'https://file.vince.pub/', icon: 'iconfont icon-fenzhi' },
           { key: 'Fluid 镜像站', link: '/Fluid-Source-File/', icon: 'iconfont icon-icon-test1' },
         ]
     }
