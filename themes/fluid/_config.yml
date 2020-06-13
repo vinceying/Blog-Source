@@ -301,7 +301,7 @@ valine:
   pageSize: 10 # 评论列表分页，每页条数
   lang: zh-CN # zh-CN | zh-TW | en | ja
   highlight: true # 代码高亮
-  recordIP: false # 是否记录评论者IP
+  recordIP: true # 是否记录评论者IP
   serverURLs: # 该配置适用于国内自定义域名用户, 海外版本会自动检测(无需手动填写)
 
 # 畅言
@@ -417,7 +417,7 @@ links:
       title: 'Royce',
       intro: 'OI小白',
       link: 'https://www.royce2003.top',
-      image: 'https://cdn.jsdelivr.net/gh/Royce2019/BlogSource/about/Royce.webp'
+      image: 'https://cdn.jsdelivr.net/gh/Royce003/cdn/img/royce.png'
     }
     - {
       title: '上屋顶看北斗七星',
