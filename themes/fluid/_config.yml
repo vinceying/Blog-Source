@@ -110,26 +110,26 @@ navbar:
     px: 3  # 模糊像素，只能为数字，数字越大模糊度越高
     alpha: 0.7   # 透明度，只能为数字，范围0~1，数字越大透明度越低，注意透明过度可能看不清菜单字体
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
-    - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
-    - { key: '随笔', link: '/note/', icon: 'iconfont icon-clipboard' }
-    - { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    - { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
-    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
-    - { key: '留言', link: '/comment/', icon: 'iconfont icon-comments' }
-    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    - {
-        key: '更多',
-        icon: 'iconfont icon-gongneng',
-        link: '#',
-        submenu: [
-          { key: '主站', link: 'https://www.vince.pub', icon: 'iconfont icon-icon_wangye' },
-          { key: '私有云', link: 'https://Cloud.vince.pub', icon: 'iconfont icon-wenjianjia' },
-          { key: '壁纸', link: 'https://i.vince.pub/website/wallpapers/', icon: 'iconfont icon-xiangce' },
-          { key: '文件', link: 'https://file.vince.pub/', icon: 'iconfont icon-fenzhi' },
-          { key: 'Fluid 镜像站', link: '/Fluid-Source-File/', icon: 'iconfont icon-icon-test1' },
-        ]
-    }
-
+    - { key: '改版计划', link: '/', icon: 'iconfont icon-clipboard' }
+    #- { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
+    #- { key: '随笔', link: '/note/', icon: 'iconfont icon-clipboard' }
+    #- { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
+    #- { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
+    #- { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    #- { key: '留言', link: '/comment/', icon: 'iconfont icon-comments' }
+    #- { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
+    #- {
+    #    key: '更多',
+    #    icon: 'iconfont icon-gongneng',
+    #    link: '#',
+    #    submenu: [
+    #      { key: '主站', link: 'https://www.vince.pub', icon: 'iconfont icon-icon_wangye' },
+    #      { key: '私有云', link: 'https://Cloud.vince.pub', icon: 'iconfont icon-wenjianjia' },
+    #      { key: '壁纸', link: 'https://i.vince.pub/website/wallpapers/', icon: 'iconfont icon-xiangce' },
+    #      { key: '文件', link: 'https://file.vince.pub/', icon: 'iconfont icon-fenzhi' },
+    #      { key: 'Fluid 镜像站', link: '/Fluid-Source-File/', icon: 'iconfont icon-icon-test1' },
+    #    ]
+    #}
 search: # 搜索栏
   enable: true
   path: /local-search.xml # 文件引用地址，默认是下方生成位置，也可以将生成后的 local-search.xml 上传到其它位置引用，如：https://www.example.com/local-search.xml
@@ -170,13 +170,13 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: https://cdn.vince.pub/blog-file/photo/site-0410/index.jpg  # 首页 Banner 头图，以下相同
-  banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
+  banner_img: https://cdn.vince.pub/blog-file/photo/debug.png # 首页 Banner 头图，以下相同
+  banner_img_height: 60  # 头图高度，屏幕百分比，available: 0 - 100，首页默认100
   banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: '' # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: '对这个世界充满好奇心'  # 为空则按 hexo config.subtitle 显示
+    text: '🔧 网站改版维护中'  # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -246,7 +246,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     specific: false  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments:  # 评论
-    enable: true  # 开启评论
+    enable: false  # 开启评论
     type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
 
