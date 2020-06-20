@@ -14,7 +14,7 @@
   "dependencies": {
     "-": "0.0.1",
     "@upupming/hexo-renderer-markdown-it-plus": "^2.0.2",
-    "hexo": "^4.0.0",
+    "hexo": "^4.2.1",
     "hexo-abbrlink": "^2.0.5",
     "hexo-admin": "^2.3.0",
     "hexo-blog-encrypt": "^3.0.12",
