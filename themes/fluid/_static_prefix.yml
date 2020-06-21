@@ -65,10 +65,10 @@ clipboard: https://cdn.staticfile.org/clipboard.js/2.0.6/
 
 mermaid: https://cdn.staticfile.org/mermaid/8.5.0/
 
-valine: https://cdn.staticfile.org/valine/1.4.14/
+valine: https://unpkg.com/valine/dist/
 
 gitalk: https://cdn.staticfile.org/gitalk/1.6.2/
 
-blueimp-md5: https://cdn.staticfile.org/blueimp-md5/2.13.0/
+disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1.0/dist/
 
-jinrishici: https://sdk.jinrishici.com/v2/browser/
+hint: /lib/hint/

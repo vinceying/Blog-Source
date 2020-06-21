@@ -6,36 +6,36 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequ
  * @param {Function} callback The callback to handle whichever event
  */
 function Debouncer(callback) {
-    this.callback = callback;
-    this.ticking = false;
+  this.callback = callback;
+  this.ticking = false;
 }
 Debouncer.prototype = {
-    constructor: Debouncer,
+  constructor: Debouncer,
 
-    /**
-     * dispatches the event to the supplied callback
-     * @private
-     */
-    update: function() {
-        this.callback && this.callback();
-        this.ticking = false;
-    },
+  /**
+   * dispatches the event to the supplied callback
+   * @private
+   */
+  update: function() {
+    this.callback && this.callback();
+    this.ticking = false;
+  },
 
-    /**
-     * ensures events don't get stacked
-     * @private
-     */
-    requestTick: function() {
-        if (!this.ticking) {
-            requestAnimationFrame(this.rafCallback || (this.rafCallback = this.update.bind(this)));
-            this.ticking = true;
-        }
-    },
-
-    /**
-     * Attach this as the event listeners
-     */
-    handleEvent: function() {
-        this.requestTick();
+  /**
+   * ensures events don't get stacked
+   * @private
+   */
+  requestTick: function() {
+    if (!this.ticking) {
+      requestAnimationFrame(this.rafCallback || (this.rafCallback = this.update.bind(this)));
+      this.ticking = true;
     }
+  },
+
+  /**
+   * Attach this as the event listeners
+   */
+  handleEvent: function() {
+    this.requestTick();
+  }
 };
