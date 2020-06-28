@@ -6,24 +6,107 @@ page.banner_img = theme.links.banner_img
 page.banner_img_height = theme.links.banner_img_height
 page.banner_mask_alpha = theme.links.banner_mask_alpha
 %>
+    <p class="note note-primary">友情链接</p>
 
-<div class="row links">
-  <% for(const each of theme.links.items) { %>
-    <% if (!each.title || !each.link) continue %>
-    <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="<%= url_for(each.link) %>" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          <% if (each.image) { %>
-            <div class="link-avatar my-auto">
-              <img src="<%= each.image %>" alt="<%= each.title %>" />
-            </div>
-          <% } %>
-          <div class="link-text">
-            <div class="link-title"><%- each.title %></div>
-            <div class="link-intro"><%- each.intro %></div>
-          </div>
-        </div>
-      </a>
+    <div class="row links">
+        <% for(const each of theme.links.items) { %>
+            <% if (!each.title || !each.link) continue %>
+                <div class="card col-lg-4 col-md-6 col-sm-12">
+                    <a href="<%= url_for(each.link) %>" class="card-body hover-with-bg" target="_blank" rel="noopener">
+                        <div class="card-content">
+                            <% if (each.image) { %>
+                                <div class="link-avatar my-auto">
+                                    <img src="<%= each.image %>" alt="<%= each.title %>" />
+                                </div>
+                                <% } %>
+                                    <div class="link-text">
+                                        <div class="link-title">
+                                            <%- each.title %>
+                                        </div>
+                                        <div class="link-intro">
+                                            <%- each.intro %>
+                                        </div>
+                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <% } %>
     </div>
-  <% } %>
-</div>
+
+    <p class="note note-success">申请友链</p>
+    <link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/partial.css">
+    <div class="linkscard">
+        <div class="postcard green">
+            <div class="additional">
+                <div class="user-card">
+                    <div class="level center">
+                        <i class="iconfont icon-youhailaji-feijiuxiaojiadian"></i> Vince's Blog
+                    </div>
+                    <div class="points center">
+                        16 POSTS
+                    </div>
+                    <img src="https://cdn.vince.pub/blog-file/photo/i.jpg" width="110" height="110" role="img" aria-labelledby="title desc" class="center">
+                </div>
+                <div class="more-info">
+                    <h1>Vince Ying</h1>
+                    <div class="coords">
+                        <span>Bad code</span>
+                        <span>Joined Apr 2020</span>
+                    </div>
+                    <div class="coords">
+                        <span>Just do it later</span>
+                        <span>Fujian, China</span>
+                    </div>
+                    <div class="stats">
+                        <div>
+                            <div class="title">友链</div>
+                            <div class="value">10</div>
+                        </div>
+                        <div>
+                            <div class="title">文章</div>
+                            <div class="value">16</div>
+                        </div>
+                        <div>
+                            <div class="title">懒惰</div>
+                            <div class="value infinity">∞</div>
+                        </div>
+                        <div>
+                            <div class="title">学习</div>
+                            <div class="value infinity">∞</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="general">
+                <h1>Vince</h1>
+                <p>欢迎你访问本站，感谢关注，如果你想要交换友链，请通过以下方式。佛系网站，访客也不多，主要为了记录一些东西。
+                </p>
+                <span class="more">上次更新：2020/06/26</span>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/partial.css">
+    <p><strong>📄 Info</strong></p>
+    <div class="icheck-material-teal">
+        <input type="radio" checked id="green2" name="do-1" />
+        <label for="teal2">Name：Vince's Blog </label>
+    </div>
+    <div class="icheck-material-teal">
+        <input type="radio" checked id="teal2" name="do-2" />
+        <label for="teal2">Link：https://i.vince.pub</label>
+    </div>
+    <div class="icheck-material-teal">
+        <input type="radio" checked id="teal2" name="do-3" />
+        <label for="teal2">Description：🍉 Bad Code </label>
+    </div>
+    <div class="icheck-material-teal">
+        <input type="radio" checked id="teal2" name="do-4" />
+        <label for="teal2">Icon：https://cdn.jsdelivr.net/gh/vinceying/blog-file/photo/vince_logo.jpg</label>
+    </div>
+    <br>
+
+    <p><strong>📐 Links</strong></p>
+
+    If you feel like to change links, you can
+
+    <br> ✒ Submit a <a href="/comment" target="_blank">Comment</a> | 🌏 Add a <a href="https://github.com/vinceying/blog-file/issues" target="_blank">Issues</a> | 🚩 Sent a <a href="mailto:admin@vince.pub" target="_blank">Email</a>

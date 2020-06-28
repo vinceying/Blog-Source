@@ -64,7 +64,7 @@ custom_js:
   - https://cdn.vince.pub/blog-file/js/horizontalmenu.js
 custom_css:
   - /css/demo.css
-  - https://at.alicdn.com/t/font_1744971_kgatoperq7.css
+  - //at.alicdn.com/t/font_1744971_dbtmro899q7.css
   - https://cdn.vince.pub/blog-file/css/jquery.horizontalmenu.css
   - https://cdn.vince.pub/blog-file/css/normalize.css
   - https://cdn.vince.pub/blog-file/css/icheck-material.css
@@ -111,32 +111,39 @@ version:  # 主题版本相关
 # Header
 #---------------------------
 navbar:
-  blog_title:  # 导航栏左侧的标题，为空则按 hexo config.title 显示
+  blog_title: Vince's Blog # 导航栏左侧的标题，为空则按 hexo config.title 显示
   ground_glass:  # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
     enable: true
     px: 3  # 模糊像素，只能为数字，数字越大模糊度越高
     alpha: 0.7   # 透明度，只能为数字，范围0~1，数字越大透明度越低，注意透明过度可能看不清菜单字体
   menu:  # 可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
-     - { key: '改版计划', link: '/', icon: 'iconfont icon-clipboard' }
-    #- { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
-    #- { key: '随笔', link: '/note/', icon: 'iconfont icon-clipboard' }
-    #- { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' }
-    #- { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' }
-    #- { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
-    #- { key: '留言', link: '/comment/', icon: 'iconfont icon-comments' }
-    #- { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
-    #- {
-    #    key: '更多',
-    #    icon: 'iconfont icon-gongneng',
-    #    link: '#',
-    #    submenu: [
-    #      { key: '主站', link: 'https://www.vince.pub', icon: 'iconfont icon-icon_wangye' },
-    #      { key: '私有云', link: 'https://Cloud.vince.pub', icon: 'iconfont icon-wenjianjia' },
-    #      { key: '壁纸', link: 'https://i.vince.pub/website/wallpapers/', icon: 'iconfont icon-xiangce' },
-    #      { key: '文件', link: 'https://file.vince.pub/', icon: 'iconfont icon-fenzhi' },
-    #      { key: 'Fluid 镜像站', link: '/Fluid-Source-File/', icon: 'iconfont icon-icon-test1' },
-    #    ]
-    #}
+    - { key: 'home', link: '/', icon: 'iconfont icon-home-fill' }
+    - {
+        key: '索引',
+        icon: 'iconfont icon-icon_wangye',
+        link: '#',
+        submenu: [
+         { key: 'tag', link: '/tags/', icon: 'iconfont icon-tags-fill' },
+         { key: 'archive', link: '/archives/', icon: 'iconfont icon-archive-fill' },
+         { key: 'category', link: '/categories/', icon: 'iconfont icon-category-fill' },
+        ]
+    }
+    - { key: '随笔', link: '/note/', icon: 'iconfont icon-clipboard' }
+    - { key: 'links', link: '/links/', icon: 'iconfont icon-link-fill' }
+    - { key: '留言', link: '/comment/', icon: 'iconfont icon-comments' }
+    - { key: 'about', link: '/about/', icon: 'iconfont icon-user-fill' }
+    - {
+        key: '更多',
+        icon: 'iconfont icon-gongneng',
+        link: '#',
+        submenu: [
+         { key: '主站', link: 'https://www.vince.pub', icon: 'iconfont icon-icon_wangye' },
+         { key: '私有云', link: 'https://Cloud.vince.pub', icon: 'iconfont icon-wenjianjia' },
+         { key: '壁纸', link: 'https://i.vince.pub/website/wallpapers/', icon: 'iconfont icon-xiangce' },
+         { key: '文件', link: 'https://file.vince.pub/', icon: 'iconfont icon-fenzhi' },
+         { key: 'Fluid 镜像站', link: '/Fluid-Source-File/', icon: 'iconfont icon-icon-test1' },
+        ]
+    }
 
 search: # 搜索栏，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件。
   enable: true
@@ -179,13 +186,13 @@ scroll_top_arrow:  # 向顶部滚动的箭头
 # Index Page
 #---------------------------
 index:
-  banner_img: https://cdn.vince.pub/blog-file/photo/debug.png # 首页 Banner 头图，以下相同
-  banner_img_height: 60  # 头图高度，屏幕百分比，available: 0 - 100
+  banner_img: https://cdn.vince.pub/blog-file/photo/site-0625/index.png # 首页 Banner 头图，以下相同
+  banner_img_height: 100  # 头图高度，屏幕百分比，available: 0 - 100
   banner_mask_alpha: 0.3  # 头图黑色蒙版的透明度，available: 0 - 1.0， 0 是完全透明（无蒙版），1 是完全不透明
   post_default_img: '' # 默认的文章封面图，当没有指定 index_img 时会使用该图片，若都为空则不显示任何图片
   slogan:  # 首页副标题的独立设置
     enable: true  # 为 false 则不显示任何内容
-    text: '🔧 网站改版维护中'  # 为空则按 hexo config.subtitle 显示
+    text: '对这个世界充满好奇心'  # 为空则按 hexo config.subtitle 显示
   auto_excerpt:
     enable: true
   post_url_target: _self  # available: _blank | _self
@@ -197,7 +204,7 @@ index:
 # 通过 hexo new page 命令创建的页面
 # Custom Page
 page:
-  banner_img: https://cdn.vince.pub/blog-file/photo/site-0410/index.jpg
+  banner_img: https://cdn.vince.pub/blog-file/photo/site-0625/index.png
   banner_img_height: 60  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
 
@@ -206,7 +213,7 @@ page:
 # Post Page
 #---------------------------
 post:  # 部分配置同时控制自定义页面，注意备注
-  banner_img: https://cdn.vince.pub/blog-file/photo/site-0410/index.jpg
+  banner_img: https://cdn.vince.pub/blog-file/photo/post_icon.jpg
   banner_img_height: 70  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   meta:  # 文章标题下方的信息
@@ -254,7 +261,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     specific: false  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments:  # 评论
-    enable: true # 开启评论
+    enable: true  # 开启评论
     type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
 
@@ -381,11 +388,10 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
   name: vince
   introduce: 前某不知名论坛版主 / Linux爱好者 / 三流业余前端选手 # 支持 HTML
   icons: # 更多图标可从 https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/iconfont.png 查找，class 代表图标的 css class
-    - { class: 'iconfont icon-github-fill', link: 'https://github.com/vinceying/' }
-    - { class: 'iconfont icon-weibo-fill', link: 'https://weibo.com/xwvince/' }
-    - { class: 'iconfont icon-zhihu-fill', link: 'https://www.zhihu.com/people/vince-best' }
+    - { class: 'iconfont icon-github-fill', link: 'https://github.com/vinceying/',tip: 'GitHub'}
+    - { class: 'iconfont icon-weibo-fill', link: 'https://weibo.com/xwvince/',tip: 'Weibo' }
+    - { class: 'iconfont icon-zhihu-fill', link: 'https://www.zhihu.com/people/vince-best',tip: 'Zhihu' }
     - { class: 'iconfont icon-email', link: 'mailto:admin@vince.pub' }
-    - { class: 'iconfont icon-set', link: '/site-admin' }
     # - { class: 'iconfont icon-wechat-fill', qrcode: '/img/favicon.p
 
 
@@ -394,7 +400,7 @@ about:  # 关于页需要手动创建，具体请见：https://hexo.fluid-dev.co
 # 404 Page
 #---------------------------
 page404:
-  banner_img: https://cdn.vince.pub/blog-file/photo/site-0410/index.jpg
+  banner_img: https://i.vince.pub/blog-file/photo/site-0625/index.png
   banner_img_height: 85  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle: 'Page not found'  # 打字机内容
@@ -405,8 +411,8 @@ page404:
 # Links Page
 #---------------------------
 links:
-  banner_img: https://cdn.vince.pub/blog-file/photo/site-0410/links.png
-  banner_img_height: 80  # available: 0 - 100
+  banner_img: https://cdn.vince.pub/images/8.png
+  banner_img_height: 75  # available: 0 - 100
   banner_mask_alpha: 0.3  # available: 0 - 1.0
   subtitle:  # 打字机内容
   items:  # intro 与 image 可省略
@@ -463,10 +469,4 @@ links:
       intro: '长风破浪会有时，直挂云帆济沧海',
       link: 'https://flexiston.com/',
       image: 'https://cdn.jsdelivr.net/gh/Flexiston/CDN/img/avatar.png'
-    }
-    - {
-      title: 'nomar',
-      intro: '技术记录分享',
-      link: 'https://www.nomar.cn',
-      image: 'https://q2.qlogo.cn/headimg_dl?dst_uin=406429544@qq.com,406429544,&spec=100'
     }

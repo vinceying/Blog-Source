@@ -7,28 +7,120 @@ page.banner_img_height = theme.about.banner_img_height
 page.banner_mask_alpha = theme.about.banner_mask_alpha
 %>
 
-<div class="text-center">
-  <div class="about-info">
-    <div class="about-name"><%- theme.about.name %></div>
-    <div class="about-intro"><%- theme.about.introduce %></div>
-    <div class="about-icons">
-      <% for(const each of theme.about.icons) { %>
-        <% if (!each.class) continue; %>
-        <% var cls = each.class %>
-        <% var isQr = each.qrcode %>
-        <a href="<%= isQr ? 'javascript:;' : url_for(each.link) %>" class="<%= isQr ? 'qr-trigger' : '' %>
-           <%= !isQr && each.tip ? 'hint--bottom hint--rounded' : '' %>"
-           <%= !isQr && each.tip ? 'aria-label=' + each.tip : '' %>
+    <div class="text-center">
+        <div class="about-info">
+            <div class="about-name">
+                <%- theme.about.name %>
+            </div>
+            <div class="about-intro">
+                <%- theme.about.introduce %>
+            </div>
+            <div class="about-icons">
+                <% for(const each of theme.about.icons) { %>
+                    <% if (!each.class) continue; %>
+                        <% var cls = each.class %>
+                            <% var isQr = each.qrcode %>
+                                <a href="<%= isQr ? 'javascript:;' : url_for(each.link) %>" class="<%= isQr ? 'qr-trigger' : '' %>
+           <%= !isQr && each.tip ? 'hint--bottom hint--rounded' : '' %>" <%=! isQr && each.tip ? 'aria-label=' + each.tip : '' %>
         >
           <i class="<%= cls %>" aria-hidden="true"></i>
           <% if (isQr) { %>
             <img class="qr-img" src="<%= url_for(each.qrcode) %>" alt="qrcode" />
           <% } %>
         </a>
-      <% } %>
+                                <% } %>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
-<div class="mt-5 markdown-body">
-  <%- page.content %>
-</div>
+    <div class="mt-5 markdown-body">
+        <%- page.content %>
+    </div>
+
+    <div class="content">
+        <div class="ah-tab-wrapper">
+            <div class="ah-tab">
+                <a class="ah-tab-item" data-ah-tab-active="true" href="">更新日志及部署状态</a>
+                <a class="ah-tab-item" href="">本站使用的一些服务</a>
+                <a class="ah-tab-item" href="">相关版权</a>
+                <a class="ah-tab-item" href="">本站节点信息</a>
+                <a class="ah-tab-item" href="">移动端页面预览</a>
+            </div>
+        </div>
+        <div class="ah-tab-content-wrapper">
+            <div class="ah-tab-content" data-ah-tab-active="true">
+                <img src="https://cdn.vince.pub/blog-file/photo/68747470733a2f2f6170692e6e65746c6966792e636f6d2f6170692f76312f6261646765732f33356661376434392d306333322d343766382d623839302d6365333235356336373364652f6465706c6f792d737461747573.svg" alt="badge1" /></a>
+                <img src="https://cdn.vince.pub/blog-file/photo/badge1.svg" alt="badge1" /></a>
+                <img src="https://cdn.vince.pub/blog-file/photo/badge2.svg" alt="badge2" /></a>
+                <h1> </h1>
+                <li>网站整体建设开发（2020/4/4）</li>
+                <li>网站插件部署（2020/4/5）</li>
+                <li>网站关于页面完善（2020/4/5）</li>
+                <li>一些错误更正（2020/4/6）</li>
+                <li>jsdelivr 使用参考 （2020/4/6）</li>
+                <li>友链页面 （2020/4/7）</li>
+                <li>视频播放插件 （2020/4/7）</li>
+                <li>关闭分类页，打开归档页面（2020/4/7）</li>
+                <li>更换评论系统为 valine ，创建留言页面（2020/4/7）</li>
+                <li>顶部任务栏图标（2020/4/8）</li>
+                <li>中英文规范与博客版本更新（2020/4/10）</li>
+                <li>加密插件（2020/4/10）</li>
+                <li>统计服务及内容管理页面（2020/4/10）</li>
+                <li>valine 邮箱提醒（2020/4/10）</li>
+                <li>GitHub Actions 部署（2020/5/9)</li>
+                <li>更新 footer (2020/5/10)</li>
+                <li>移动一言与运行时间到关于页面(2020/5/10)</li>
+                <li>更换 CDN (2020/5/11)</li>
+                <li>整合关于页面（2020/5/21）</li>
+                <li>引入 Icheck-material（2020/5/22）</li>
+                <li>友链界面重新整合（2020/5/24）</li>
+                <li>优化菜单选项及加入更多页面（2020/5/24）</li>
+                <li>多节点部署（2020/5/26）</li>
+            </div>
+            <div class="ah-tab-content">
+                <strong>以下为本站所使用程序及插件</strong>
+                <h2> </h2>
+                <li><strong><a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="noopener">Fluid</a></strong></li>
+                <li><strong><a href="https://www.jsdelivr.com" target="_blank" rel="noopener">JSDelivr</a></strong></li>
+                <li><strong><a href="https://hitokoto.cn/" target="_blank" rel="noopener">Hitokoto</a></strong></li>
+                <li><strong><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></strong></li>
+                <li><strong><a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a></strong></li>
+                <li><strong><a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="noopener">Hexo-admin</a></strong></li>
+                <li><strong><a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">Hexo-abbrlink</a></strong></li>
+                <li><strong><a href="https://github.com/MikeCoder/hexo-blog-encrypt" target="_blank" rel="noopener">Hexo-blog-encrypt</a></strong></li>
+                <li><strong><a href="https://github.com/netcan/hexo-generator-index-pin-top" target="_blank" rel="noopener">Hexo-generator-index-pin-top</a></strong></li>
+                <li><strong><a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">Hexo-tag-dplayer</a></strong></li>
+                <li><strong><a href="https://github.com/killia15/ProgressCircle" target="_blank" rel="noopener">ProgressCircle</a></strong></li>
+                <li><strong><a href="https://github.com/bantikyan/icheck-material/" target="_blank" rel="noopener">Icheck-material</a></strong></li>
+                <li><strong><a href="https://github.com/mohammad-hammal/bootsrap4-buttons-extended" target="_blank" rel="noopener">bootsrap4-buttons-extended</a></strong></li>
+                <li><strong><a href="https://github.com/vinceying/Hexo-Action-TencentCloudBase" target="_blank" rel="noopener">Hexo-Action-TencentCloudBase</a></strong></li>
+            </div>
+            <div class="ah-tab-content">
+                <li>网站内容使用 CC BY-SA 3.0 协议，除特别标注外，均可注明出处转载。Fluid 使用 MIT 协议，我会遵守相关协议。网站图片部分来源于网络，如有侵权，非常抱歉，请通过上方电子邮件按钮联系我，收到后我将尽快删除。</li>
+            </div>
+            <div class="ah-tab-content">
+                <strong>以下为本站的节点信息</strong>
+                <h2> </h2>
+                <li><strong><a href="https://netlify.vince.pub/" target="_blank" rel="noopener">Netlify</a></strong></li>
+                <li><strong><a href="https://gh.vince.pub/" target="_blank" rel="noopener">Github</a></strong></li>
+                <li><strong><a href="https://coding.vince.pub/" target="_blank" rel="noopener">Coding</a></strong></li>
+                <li><strong><a href="https://vercel.vince.pub/" target="_blank" rel="noopener">Vercel</a></strong></li>
+            </div>
+            <div class="ah-tab-content">
+                <iframe src="https://i.vince.pub/" width="100%" height="500" name="topFrame" scrolling="yes" noresize="noresize" frameborder="0" id="topFrame"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.vince.pub/blog-file/js/horizontalmenu.js"></script>
+    <script>
+        $(function() {
+            $('.ah-tab-wrapper').horizontalmenu({
+                itemClick: function(item) {
+                    $('.ah-tab-content-wrapper .ah-tab-content').removeAttr('data-ah-tab-active');
+                    $('.ah-tab-content-wrapper .ah-tab-content:eq(' + $(item).index() + ')').attr('data-ah-tab-active', 'true');
+                    return false; //if this finction return true then will be executed http request
+                }
+            });
+        });
+    </script>
