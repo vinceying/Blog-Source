@@ -471,3 +471,9 @@ links:
       link: 'https://flexiston.com/',
       image: 'https://cdn.jsdelivr.net/gh/Flexiston/CDN/img/avatar.png'
     }
+    - {
+      title: 'pxxyyz',
+      intro: '秃头怪的自娱自乐',
+      link: 'https://pxxyyz.com',
+      image: 'https://cdn.jsdelivr.net/gh/pxxyyz/blog-file/photo/logo.png'
+    }
