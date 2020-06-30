@@ -4,7 +4,7 @@ author: Vince
 tags:
   - 教程
 categories:
-  - Diary
+  - 教程分享
 index_img: https://cdn.vince.pub/blog-file/photo/bg.jpg
 abbrlink: be772caf
 date: 2020-04-05 09:27:00

@@ -8,7 +8,7 @@ date: 2020-04-06 20:54:14
 tags:
   - 说明
 categories:
-  - 网站
+  - 网站相关
 excerpt: 使用了 Github 搭建了一个新的项目，用作相关文件处理，主要用于图床服务，使用 jsDelivr CDN 来加载
 ---
 

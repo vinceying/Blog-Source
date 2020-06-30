@@ -6,7 +6,7 @@ date: 2020-04-22 18:08:26
 tags:
  - 分享
 categories:
- - Diary
+ - 教程分享
 index_img: https://cdn.vince.pub/blog-file/photo/7e7c684e.jpg
 banner_img: https://cdn.vince.pub/blog-file/photo/7e7c684e.jpg
 excerpt: 本篇记录在 Fluid 文档中自己 PR 的内容原稿，持续更新中。

@@ -1,3 +1,4 @@
+---
 title: Hexo-Action-TencentCloudBase
 author: Vince
 abbrlink: 35e2592e
@@ -5,7 +6,7 @@ date: 2020-05-11 21:58:06
 tags:
   - 教程
 categories:
-  - Diary
+  - 项目
 index_img: https://cdn.vince.pub/blog-file/photo/marvin-meyer-SYTO3xs06fU-unsplash.jpg
 banner_img: https://cdn.vince.pub/blog-file/photo/marvin-meyer-SYTO3xs06fU-unsplash.jpg
 excerpt: 可以将 Hexo 的源文件部署推送到 Tencent CloudBase。

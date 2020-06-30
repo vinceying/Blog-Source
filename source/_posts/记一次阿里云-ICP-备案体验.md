@@ -6,7 +6,7 @@ date: 2020-04-22 16:57:27
 tags:
  - 体验
 categories:
- - Diary
+ - 心得体会
 index_img: https://cdn.vince.pub/blog-file/photo/f5a800c5.jpg
 banner_img: https://cdn.vince.pub/blog-file/photo/f5a800c5.jpg
 excerpt: 上次备案还是在2015年时，所使用 top 后缀的域名备案，后来这个域名也没有使用了，就没有续费了。几年前，pub 这个新顶域名还不能备案，这个域名我快使用5年了。

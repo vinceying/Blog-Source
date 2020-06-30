@@ -24,32 +24,13 @@
 **🚀 待完善项目**
 <div class="icheck-material-teal">
     <input type="radio" checked id="teal2" name="do-1" />
-    <label for="teal2">重新整合 note 页面</label>
+    <label for="teal2">主站</label>
 </div>
 <div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-4" />
-    <label for="teal2">友链页面完善</label>
+    <input type="radio" checked id="teal2" name="do-2" />
+    <label for="teal2">简洁版博客</label>
 </div>
-<div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-5" />
-    <label for="teal2">更换 Markdown 渲染器</label>
-</div>
-<div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-6" />
-    <label for="teal2">菜单整合及网站重新布局</label>
-</div>
-<div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-7" />
-    <label for="teal2">留言页面</label>
-</div>
-<div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-8" />
-    <label for="teal2">相关内容管理页面</label>
-</div>
-<div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-9" />
-    <label for="teal2">主站内容更新</label>
-</div>
+
 <br> 
 
 **🍉 已完善项目**
@@ -80,4 +61,8 @@
 <div class="icheck-material-teal">
     <input type="checkbox" checked id="td-6" />
     <label for="tea1">多节点部署</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="checkbox" checked id="td-7" />
+    <label for="tea1">相关页面改版</label>
 </div>

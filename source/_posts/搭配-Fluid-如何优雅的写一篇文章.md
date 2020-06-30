@@ -7,7 +7,7 @@ tags:
   - 教程
   - 分享
 categories:
-  - Diary
+  - 教程分享
 index_img: https://cdn.vince.pub/blog-file/photo/fluid-write.jpg
 banner_img: https://cdn.vince.pub/blog-file/photo/fluid-write.jpg
 excerpt: Fluid 是一款很优雅的主题，主要介绍从使用主题拓展和配图来写作。

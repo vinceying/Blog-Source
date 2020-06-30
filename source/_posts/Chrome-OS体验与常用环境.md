@@ -4,7 +4,7 @@ author: Vince
 tags:
   - 体验
 categories:
-  - Diary
+  - 心得体会
 index_img: 'https://cdn.vince.pub/blog-file/photo/chromebook.jpg'
 abbrlink: 55c107f9
 date: 2020-04-05 09:03:00
