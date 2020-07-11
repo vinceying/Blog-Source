@@ -30,6 +30,18 @@
     <input type="radio" checked id="teal2" name="do-2" />
     <label for="teal2">简洁版博客</label>
 </div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-3" />
+    <label for="teal2">所有文章配图设计</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-4" />
+    <label for="teal2">图片储存规划化</label>
+</div>
+<div class="icheck-material-teal">
+    <input type="radio" checked id="teal2" name="do-4" />
+    <label for="teal2">文章写作规划化</label>
+</div>
 
 <br> 
 

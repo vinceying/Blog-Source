@@ -4,7 +4,7 @@ date: 2020-04-07 17:12:43
 banner_img: https://cdn.vince.pub/blog-file/photo/site-0625/more.jpg
 ---
 <img src="https://cdn.vince.pub/blog-file/photo/site-0625/editor.svg" class="rounded mx-auto d-block mt-5" style="width:auto; height:auto;"><br>
-<p style="text-align:center"><strong>🎉 你好，有朋自远方来！</strong><br>📝畅所欲言 | 🔌谈天说地 | 🚩交个朋友 | 🚀共同进步</p>
+<p style="text-align:center"><strong>👬 你好，有朋自远方来！</strong><br>📝畅所欲言 | 🔌谈天说地 | 🚩交个朋友 | 🚀共同进步</p>
 <div style="text-align:center">
 <span id="jinrishici-sentence">正在加载今日诗词....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
