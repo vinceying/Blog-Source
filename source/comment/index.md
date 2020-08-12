@@ -17,7 +17,7 @@ banner_img: https://cdn.vince.pub/blog-file/photo/site-0625/more.jpg
   <div id="vcomments"></div>
   <script type="text/javascript">
     function loadValine() {
-      addScript('https://unpkg.com/valine/dist/Valine.min.js', function () {
+      addScript('https://cdn.staticfile.org/valine/1.4.14/', function () {
         new Valine({
           el: "#vcomments",
           app_id: "DUOV5j8BiO7vBmQQThJ1FdG9-gzGzoHsz",
