@@ -3,7 +3,7 @@
  date: 2020-06-26 01:25:08 
  banner_img: https://cdn.vince.pub/blog-file/photo/debug.png 
 ---
-<p class="note note-info">更新计划</p>
+<p class="note note-info">更新计划(鸽王）</p>
 
 <div id="html-partial">
     <link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/circlechart.css">
@@ -39,7 +39,7 @@
     <label for="teal2">图片储存规划化</label>
 </div>
 <div class="icheck-material-teal">
-    <input type="radio" checked id="teal2" name="do-4" />
+    <input type="radio" checked id="teal2" name="do-5" />
     <label for="teal2">文章写作规划化</label>
 </div>
 

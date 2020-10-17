@@ -137,9 +137,7 @@ navbar:
         icon: 'iconfont icon-gongneng',
         link: '#',
         submenu: [
-         { key: '主站', link: 'https://www.vince.pub', icon: 'iconfont icon-icon_wangye' },
          { key: '私有云', link: 'https://Cloud.vince.pub', icon: 'iconfont icon-wenjianjia' },
-         { key: '壁纸', link: 'https://i.vince.pub/website/wallpapers/', icon: 'iconfont icon-xiangce' },
          { key: '文件', link: 'https://file.vince.pub/', icon: 'iconfont icon-fenzhi' },
          { key: 'Fluid 镜像站', link: '/Fluid-Source-File/', icon: 'iconfont icon-icon-test1' },
         ]
@@ -262,7 +260,7 @@ post:  # 部分配置同时控制自定义页面，注意备注
     specific: false  # 开启后，只有在文章 Front-matter 里指定 `mermaid: true` 才会在文章页启动公式转换，以便在页面不包含公式时提高加载速度
     options: { theme: 'default' }  # 接口选项，具体可见：http://mermaid-js.github.io/mermaid/#/mermaidAPI
   comments:  # 评论
-    enable: true  # 开启评论
+    enable: false  # 开启评论
     type: valine  # 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances
 
 
