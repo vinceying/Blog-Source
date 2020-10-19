@@ -14,4 +14,4 @@ jobs:
         ftp-server: ftp://47.100.41.120:21
         ftp-username: old-blog
         ftp-password: ${{ secrets.FTP_PASSWORD_OLD }}
-        local-dir: ./
+        local-dir: ./ 
